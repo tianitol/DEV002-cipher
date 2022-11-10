@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shalimar&display=swap');
 
-*{
-
-}
 
 body {
     min-height: 100vh;
@@ -17,15 +14,15 @@ body {
 }
 
 #img1 {
-    height: 200px;
-    width: 30%;
+    height: 300px;
+    width: 40%;
     float: left;
 }
 img{
     max-width: 100%;
     max-height: 100%;
     border: hidden black;
-    padding: 1em 1em 0em 5em;
+    padding: 0em 1em 0em 2em;
     opacity: 0.8;
     filter: brightness(90%);
 }
@@ -45,13 +42,15 @@ header {
 }
 #head{
     font-family: 'Caveat', cursive;
-    font-size: 45px;
-    padding: 0em;
     float: right;
-    border: 2px hidden black;
+    border: 0px hidden black;
     width: 60%;
     text-align: center;
 
+}
+
+#titulo1{
+font-size: 100px;
 }
 
 #p1{
@@ -63,38 +62,43 @@ header {
 
 #root {
     width: 58%;
-    height: 60%;
-    font-size: 18px;
+    height: 70%;
+    font-size: 20px;
+    color: aquamarine;
     border:3px groove aquamarine;
     display:inline-block;
     text-align: center;
     justify-content: center;
 }
-#message {
+#mensaje {
     width: 70%;
-    height: 30px;
-    border: 2px solid black;
+    height: 40px;
     outline: none;
-    background-color: #22c1c3;
-    color: black;
+    color: aquamarine;
+    background-color: #303030;
+    font-size: 30px;
 }
 
-#offset {
+#clave {
     width: 8%;
     height: 30px;
-    border: 2px solid black;
+    background-color: #303030;
     outline: none;
-    background-color: #22c1c3;
-    color: black;
+    color: aquamarine;
 }
 
-#result {
+#mensaje2 {
     width: 70%;
-    height: 30px;
-    border: 2px solid black;
+    height: 40px;
     outline: none;
-    background-color: #22c1c3;
-    color: black;
+    background-color: #303030;
+    color: aquamarine;
+    font-size: 30px;
+
+}
+
+#botones{
+    padding: 1.5rem 4.5rem;
 
 }
 
@@ -114,7 +118,8 @@ section {
     font-size: 20px;
     padding: 0em;
     display: inline-block;
-    float: left;
+
+ 
     
 }
 
@@ -125,9 +130,9 @@ section h1{
 }
 
 main{
-    height: calc(100vh - (100px + 100px));
+    height: calc(100vh - 100px);
     border: hidden black;
-    padding: 4em 1em 0em 1em;
+    padding: 8em 1em 0em 1em;
     margin: 0em;
 
 }

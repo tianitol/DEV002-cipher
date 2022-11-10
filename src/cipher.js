@@ -2,6 +2,7 @@ const cipher = {
 //se define la función para cifrar del método cipher (cipher.encode)
 
 encode(text, offset){
+  console.log(text, offset);
 //declarar las variables necesarias para implementar la función
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   let result = '';
@@ -12,7 +13,7 @@ encode(text, offset){
   if (text){
     for(let i = 0; i<text.length; i++){ 
         if(alphabet.indexOf(text[i]) !=-1){ //indexOf devuelve -1 cuando no encuentra el caracter en la cadena
-          let position = ((alphabet.indexOf(texto[i]) +offset)%26);
+          let position = ((alphabet.indexOf(text[i]) +offset)%26);
           //A continuación ir sumando las letras cambiadas del text original a la cadena resultado
           result += alphabet[position];
 
@@ -37,7 +38,7 @@ decode(text, offset){
     if (text){
       for(let i = 0; i<text.length; i++){ 
           if(alphabet.indexOf(text[i]) !=-1){ //indexOf devuelve -1 cuando no encuentra el caracter en la cadena
-            let position = ((alphabet.indexOf(texto[i]) -offset)%26);
+            let position = ((alphabet.indexOf(text[i]) -offset)%26);
             //A continuación ir sumando las letras cambiadas del text cifrado a la cadena resultado
             result += alphabet[position];
   
