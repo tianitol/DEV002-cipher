@@ -9,7 +9,7 @@
 
 <body>
   <header>
-    <div id="img1"><img src="Images/carta2.jpg" alt=""></div>
+    <div id="img1"><img src="Images/carta2.jpg" alt="un sobre rosa pálido de bordes desvanecidos en color azul"></div>
     <div id="head">
       <h1 id="titulo1">SHARE SAFE</h1>
       <p id="p1">Comparte información sensible de forma privada</p>
@@ -19,20 +19,21 @@
   <main>
     <section>
       <h2 id="titulo3"> Bienvenid@ a <br>Share Safe</h2>
-      <p> Aquí podrás cifrar y compartir mensajes <br>sólo con quien tú quieras <br>en la más absoluta privacidad.</p>
-      <p> Además podrás descifrar <br> los mensajes que recibas <br>de una forma fácil y rápida.</p>
+      <p> Aquí podrás cifrar mensajes para compartirlos <br>sólo con quien tú quieras <br>en la más absoluta privacidad.</p>
+      <p>Sólo debes escribir tu mensaje y escoger la clave <br>que luego compartirás para que sea descifrado. <br>*Todo es transformado a mayúsculas.*</p>
+      <p> Además podrás descifrar <br> los mensajes que recibas <br>de la misma forma, <br>fácil y rápido.</p>
     </section>
 
     <div id="root">
-      <h2 id="titulo2">Tu Mensaje</h2>
+      <h2 id="titulo2">Escribe tu Mensaje</h2>
 
       <form id="cifrador" autocomplete="off">
 
-        <input type="text" id="mensaje" size="50" spellcheck="false" placeholder="Ingrese su mensaje" name="text">
+        <input type="text" id="mensaje" spellcheck="false" placeholder="Ingrese su mensaje" name="text">
 
         <p id="botones"><button type="button" id="cifrar">Cifrar</button>
           <button type="button" id="descifrar">Descifrar</button>
-          <label for="clave">Clave:</label>
+          <label for="clave" id="tituloClave">Clave:</label>
           <input type="number" id="clave" name="clave" value="1" min="1" max="25">
         </p>
 
