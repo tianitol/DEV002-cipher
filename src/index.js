@@ -5,9 +5,11 @@ import cipher from './cipher.js';
 function encriptar(){
     console.log('Hola Mundo');
    let mensajeEncriptado = cipher.encode(
-        document.getElementById('mensaje').value.toUpperCase(),
-        parseInt(document.getElementById('clave').value)
+        ((parseInt(document.getElementById('clave').value)) % 26 + 26) % 26,
+        document.getElementById('mensaje').value.toUpperCase()
+       
     );
+
 console.log(mensajeEncriptado);
 
     //se imprime el resultado obtenido de cipher.encode() atrapado en mensajeEncriptado al hmtl
@@ -21,15 +23,20 @@ document.getElementById('cifrar').addEventListener('click', encriptar);
 
 
 function desencriptar(){
+    console.log('Hola Mundo');
+
     let mensajeDesencriptado = cipher.decode(
-         document.getElementById('mensaje').value.toUpperCase(),
-         parseInt(document.getElementById('clave').value)
+         parseInt(document.getElementById('clave').value),
+         document.getElementById('mensaje').value.toUpperCase()
      );
- 
+
+     console.log(mensajeDesencriptado);
+
      document.getElementById('mensaje2').value = mensajeDesencriptado;
- 
+
  
  }
+ 
 //escuchar el evento del click sobre el botón descifrar
 document.getElementById('descifrar').addEventListener('click', desencriptar);
  
