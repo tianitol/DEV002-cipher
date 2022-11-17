@@ -40,7 +40,7 @@ Share Safe fue pensado para compartir datos de forma segura en el cotidiano, ya 
 La idea era desplegar todo en una sola pantalla, donde además de estar el cifrador/descifrador, estuviera una breve introducción a la app y su uso.
 
 ### Prototipo de Baja fidelidad (Wideframe)
-![image](/src/Images/WF.jpeg)
+![image](/src/Images/wf.jpeg)
 
 la elección de colores se basó principalmente en una paleta de colores que transmitiera por sobre todo confianza y tranquilidad y no saturara la pantalla.
 También se utilizaron tamaños de letra medio-grande tanto en los cuadros de ingreso como de salida de texto, así como en los textos de los botones. Todo esto para asegurar la correcta visualización de las opciones por un público mayor incluso.
